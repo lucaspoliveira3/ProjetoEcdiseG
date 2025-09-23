@@ -8,7 +8,10 @@ a{
 
 header{
     background:url(../images/fundo1.png);
+    background-size: cover;
     margin: 0px 0px 0px 0px;
+
+  padding: 45px 45px 45px;
 }
 
 header nav{
@@ -29,13 +32,21 @@ header nav{
 & a{
      color: rgb(255, 217, 167);
 }
+
 }
+
 header span h1{
 color: #fbf7ba;
    margin: 20px 80px;
     font-size: 5vw;
 
 }
+
+header img{
+    max-width: 20%;
+    border-radius: 30%;
+}
+
 header p button{
    background-color: #1b0a02;
 color: #7f7e5c;
@@ -44,13 +55,153 @@ margin: 4vw 4vw;
  
 }
 
+section.introducao{
+  margin: 50px 100px ;
+}
+
+
+
 section.introducao h2{
     font-size: 3vw;
-    margin: 50px 80px;
+    margin: 100px 100px;
+}
+
+section.introducao div{
+ display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 50px 100px; 
+    gap: 20px; 
+    
+
+}
+
+section.introducao span p{
+    font-size: 2rem;
+   font-weight: bolder;
+   color: #7f7e5c;
 }
 
 section.introducao p{
+    padding: 10px 5px;
+    font-size: 1.3rem;
 
+
+}
+.motivacao {
+    min-height: 80vh; 
+    background-color: #8B4513; 
+    background-image: url(../images/background2.png); 
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.motivacao-conteudo {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 90vw;
+}
+
+.texto-grande {
+    font-family: 'SuaFonteAqui', sans-serif; 
+    font-size: 8vw; 
+    color: #fbf7ba; 
+    line-height: 0.9; 
+    text-align: right; 
+    white-space: pre-line; 
+    margin: 0;
+}
+
+.imagem-e-disciplina {
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    padding: 10px; 
+}
+
+.imagem-e-disciplina img {
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+.disciplina-cursiva {
     
+    font-size: 10vw; 
+    color: #fbf7ba; 
+    position: absolute; 
+    bottom: 5%; 
+    right: -10%; 
+  
+    margin: 0; 
+}
+section.disc{
+ margin: 50px 100px ;
+    
+}
+section.disc h2{
+font-size: 3vw;
 
+padding-bottom: 10rem;
+}
+
+section.disc img{
+
+ max-width: 50%;
+ padding: 30px 30px;
+
+}
+section.disc div{
+    display: flex;
+    justify-content: space-between;
+}
+section.disc p{
+    font-size: 2rem;
+}
+section.disc span{
+    color: #7f7e5c;
+}
+
+section.explorando{
+background: url(../images/background3.png);
+ background-size: cover;
+ padding: 15vw;
+}
+
+section.explorando h2{
+font-size: 5rem;
+padding-bottom: 18px;
+}
+
+section.explorando p{
+    padding: 10px;
+    font-size: 2rem;
+}
+ 
+
+footer{
+    background-color: #3a1b01;
+}
+footer a{
+    margin: 50px;
+   
+}
+
+footer p{
+    padding: 10px 50px 10px 50px;
+    color: white;
+}
+
+footer span{
+font-weight: bolder;
+    
 }
