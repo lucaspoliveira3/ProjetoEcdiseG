@@ -42,17 +42,17 @@ header a.marcado {
     padding: 10px 20px;
 }
 
-
+/*=============index============*/
 section.banner {
     background: url(../images/fundo1.png);
     background-size: cover;
     margin: 0px 0px 0px 0px;
 
-    padding: 45px 45px 45px;
+    padding: 10vw;
 }
 
 section.banner span h1 {
-    color: #fbf7ba;
+    color: #f8f5ea;
     margin: 20px 80px;
     font-size: 5vw;
 
@@ -65,9 +65,13 @@ section.banner img {
 
 section.banner p a button {
     background-color: #1b0a02;
-    color: #7f7e5c;
+    color: #b4b4a2;
     padding: 30px 50px 30px 50px;
-    margin: 4vw 4vw;
+    margin: 2vw 4vw;
+    border-color: #e9bda4;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
 
 }
 
@@ -206,12 +210,16 @@ section.explorando {
 section.explorando h2 {
     font-size: 5rem;
     padding-bottom: 18px;
+    color: #f8f5ea;
 }
 
 section.explorando p {
     padding: 10px;
     font-size: 2rem;
+    color: #301d03;
 }
+
+/*=============PÁGINA 2===============*/
 
 section.corpo {
     background: url(../images/fundoIntrCorpo.png);
@@ -373,17 +381,192 @@ section.celebrando p.supercombo {
     color: #593a33;
 }
 
+/*================PÁGINA 3================*/
+
+section.estudoEficiente {
+    background: url(../images/background7.png);
+    padding: 10vw;
+    background-size: cover;
+    text-align: center;
+}
+
+section.estudoEficiente div {
+    display: flex;
+}
+
+section.estudoEficiente h1 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #f4efe5;
+    font-weight: bolder;
+}
+
+section.estudoEficiente p {
+    padding: 10px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+section.estudoEficiente p.destaque {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #3a1b01;
+    padding: 20px 20px;
+    color: #ffffff;
+    display: inline;
+    border-radius: 5px;
+    margin-top: 5vw;
+}
+
+section.estudoEficiente p.destaque span {
+    color: #e6ffa6;
+}
+
+section.montarRotina {
+    background: url(../images/fundoBalanca.png);
+    background-size: cover;
+    padding: 10vw;
+    text-align: center;
+}
+
+section.montarRotina h2 {
+    font-size: 3rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #333;
+    font-weight: bolder;
+}
+
+section.montarRotina p.sub {
+    font-size: 1.5rem;
+    margin: 3vw 2vw;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    display: inline;
+    background-color: #e0fe9c;
+}
+
+section.montarRotina p.definaHorarios {
+    text-shadow: 1px 1px 1px #333;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+section.montarRotina p.sombra {
+    text-shadow: 1px 1px 1px #a5b57c;
+    font-size: 2rem;
+}
+
+section.montarRotina p {
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section.metodos {
+    background: url(../images/fundoFlor.png);
+    padding: 8vw;
+    background-size: cover;
+}
+
+section.metodos p {
+    display: flex;
+}
+
+section.metodos h2 {
+    font-size: 3rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.metodos p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #e0fe9c;
+    margin-bottom: 2vw;
+}
+
+section.metodos p img {
+    border-radius: 10px;
+    margin-top: 2vw
+}
+
+section.discDif {
+    background: url(../images/fundoFlorDoc.png);
+    padding: 10vw;
+    background-size: cover;
+    text-align: center;
+}
+
+section.discDif h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.discDif p.sub {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: #9bbe94;
+    text-shadow: 1px 1px 1px #035009;
+    margin: 2vw 2vw;
+}
+
+section.discDif p {
+    padding: 10px;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+section.revisao {
+    background-color: #1b0a02;
+    padding: 4vw 4vw;
+}
+
+section.revisao div {
+    display: flex;
+    justify-content: right;
+}
+
+section.revisao h2 {
+    font-size: 6rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #fbf7ba;
+
+    text-align: center;
+}
+
+section.revisao p {
+    padding: 10px;
+    font-size: 2.7rem;
+    text-shadow: 1px 1px 1px #404d22;
+    color: #a5b57c;
+
+}
+
+/*=============PÁGINA 4===============*/
+
 section.conceito {
     background: url(../images/background6.png);
     background-size: cover;
-    padding: 10vw;
+    padding: 15vw;
 }
 
 section.conceito h2 {
     font-size: 5rem;
     padding-bottom: 18px;
     font-weight: bolder;
-    color: #743a0b;
+    color: #f7e8dc;
 }
 
 section.conceito p {
@@ -716,182 +899,12 @@ section.aprendizado p {
     color: #f7f3aa;
 }
 
-section.estudoEficiente {
-    background: url(../images/background7.png);
-    padding: 8vw 8vw;
-    background-size: cover;
-    text-align: center;
-}
-
-section.estudoEficiente div {
-    display: flex;
-}
-
-section.estudoEficiente h1 {
-    font-size: 5rem;
-    padding-bottom: 18px;
-    margin: 2vw 2vw;
-    color: #f4efe5;
-    font-weight: bolder;
-}
-
-section.estudoEficiente p {
-    padding: 10px;
-    font-size: 2rem;
-
-    color: #ffffff;
-}
-
-section.estudoEficiente p.destaque {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    background-color: #3a1b01;
-    padding: 20px 20px;
-    color: #ffffff;
-    display: inline;
-    border-radius: 5px;
-    margin-top: 5vw;
-}
-
-section.estudoEficiente p.destaque span {
-    color: #e6ffa6;
-}
-
-section.montarRotina {
-    background: url(../images/fundoBalanca.png);
-    background-size: cover;
-    padding: 8vw 8vw;
-    text-align: center;
-}
-
-section.montarRotina h2 {
-    font-size: 3rem;
-    padding-bottom: 18px;
-    margin: 1vw 1vw;
-    color: #ffffff;
-    text-shadow: 2px 2px 2px #333;
-    font-weight: bolder;
-}
-
-section.montarRotina p.sub {
-    font-size: 1.5rem;
-    margin: 3vw 2vw;
-    padding: 5px;
-    border-radius: 10px;
-    color: #000000;
-    display: inline;
-    background-color: #e0fe9c;
-}
-
-section.montarRotina p.definaHorarios {
-    text-shadow: 1px 1px 1px #333;
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
-section.montarRotina p.sombra {
-    text-shadow: 1px 1px 1px #a5b57c;
-    font-size: 2rem;
-}
-
-section.montarRotina p {
-    margin: 10px 20px;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: #ffffff;
-}
-
-section.metodos {
-    background: url(../images/fundoFlor.png);
-    padding: 8vw 8vw;
-    background-size: cover;
-}
-
-section.metodos p {
-    display: flex;
-}
-
-section.metodos h2 {
-    font-size: 3rem;
-    padding-bottom: 18px;
-    margin: 1vw 1vw;
-    color: #ffffff;
-    font-weight: bolder;
-}
-
-section.metodos p {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: #e0fe9c;
-    margin-bottom: 2vw;
-}
-
-section.metodos p img {
-    border-radius: 10px;
-    margin-top: 2vw
-}
-
-section.discDif {
-    background: url(../images/fundoFlorDoc.png);
-    padding: 8vw 8vw;
-    background-size: cover;
-    text-align: center;
-}
-
-section.discDif h2 {
-    font-size: 5rem;
-    padding-bottom: 18px;
-    margin: 1vw 1vw;
-    color: #ffffff;
-    font-weight: bolder;
-}
-
-section.discDif p.sub {
-    padding: 10px;
-    font-size: 2.5rem;
-    color: #9bbe94;
-    text-shadow: 1px 1px 1px #035009;
-    margin: 2vw 2vw;
-}
-
-section.discDif p {
-    padding: 10px;
-    font-size: 2rem;
-
-    color: #ffffff;
-}
-
-section.revisao {
-    background-color: #1b0a02;
-    padding: 4vw 4vw;
-}
-
-section.revisao div {
-    display: flex;
-    justify-content: right;
-}
-
-section.revisao h2 {
-    font-size: 6rem;
-    padding-bottom: 18px;
-    margin: 1vw 1vw;
-    color: #fbf7ba;
-
-    text-align: center;
-}
-
-section.revisao p {
-    padding: 10px;
-    font-size: 2.7rem;
-    text-shadow: 1px 1px 1px #404d22;
-    color: #a5b57c;
-
-}
+/*============= PÁGINA 5===============*/
 
 section.feRelaTrab {
     background: url(../images/fundoFeTrab.png);
     background-size: cover;
-    padding: 10vw 10vw;
+    padding: 13vw;
     text-align: center;
 }
 
@@ -905,19 +918,19 @@ section.feRelaTrab h1 {
     font-size: 4rem;
     padding-bottom: 18px;
     margin: 2vw 2vw;
-    color: #69443c;
+    color: #fff8f6;
+    text-shadow: 2px 2px 2px #333;
     font-weight: bolder;
 }
 
 section.feRelaTrab p.sub {
     font-size: 1.5rem;
     font-weight: bolder;
-    background-color: #a18a75;
+    background-color: #c5ae98;
     padding: 20px 20px;
     color: #ffffff;
     display: inline;
-    border: 1px solid rgb(134, 85, 62);
-    border-radius: 5px;
+    border-radius: 50px;
     margin-top: 5vw;
 }
 
@@ -1049,10 +1062,12 @@ section.beneficios p.passo {
     margin-top: 5vw;
 }
 
+/*=================SOBRE NÓS===============*/
+
 
 section.conheca {
-    background-color: #f7f3aa;
-    padding: 5vw 5vw;
+    background-color: #ad8c5b;
+    padding: 10vw;
     text-align: center;
 }
 
@@ -1060,20 +1075,21 @@ section.conheca h1 {
     font-size: 7rem;
     padding-bottom: 18px;
     margin: 2vw 2vw;
-    color: #4b5b21;
+    color: #fffbc0;
     font-weight: bolder;
 }
 
 section.conheca p {
     padding: 10px;
     font-size: 2.5rem;
-
-    color: #000000;
+    color: #f8f0f0;
+        margin: 2vw 2vw;
+    background-color: #723b07;
 }
 
 section.quemSomos {
-    background-color: #f7f39e;
-    padding: 8vw 8vw;
+    background-color: #523304;
+    padding: 10vw;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -1083,11 +1099,12 @@ section.quemSomos {
 section.quemSomos p {
     padding: 10px;
     font-size: 2.5rem;
-    color: #000000;
+    color: #f1dede;
+    
 }
 
 section.alunos {
-    background-color: #e1d584;
+    background-color: #ccb180;
     padding: 5vw 5vw;
     text-align: center;
 }
@@ -1099,14 +1116,20 @@ section.alunos ul li {
 section.alunos ul li h3 {
     font-size: 3rem;
     padding: 10px;
-    color: #69443c;
+    color: #f5e9d3;
+    text-shadow: 2px 2px #755942;
+    margin: 1vw;
 }
 
 
 section.alunos ul li p {
     padding: 10px 20px;
     font-size: 1.5rem;
-    color: #708831;
+    color: #fff0d3;
+    display: inline;
+    background: #462912;
+    border-radius: 20px;
+
 }
 
 
@@ -1118,22 +1141,31 @@ section.alunos ul li img {
 }
 
 section.alunosDois {
-    background-color: #d3c77a;
+    background-color: #523304;
     padding: 5vw 5vw;
     text-align: center;
+}
+
+section.alunosDois ul li {
+    margin: 3vw 3vw;
 }
 
 section.alunosDois ul li h3 {
     font-size: 3rem;
     padding: 10px;
-    color: #69443c;
+    color: #ebc09d;
+    text-shadow: 2px 2px #94745c;
+    margin: 1vw;
 }
 
 
 section.alunosDois ul li p {
     padding: 10px 20px;
     font-size: 1.5rem;
-    color: #708831;
+    color: hsl(36, 89%, 17%);
+    display: inline;
+    background-color: #ccb180;
+    border-radius: 20px;
 }
 
 section.alunosDois ul li img {
