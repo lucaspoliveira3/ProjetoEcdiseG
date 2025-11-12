@@ -1,207 +1,1169 @@
-html{
+html {
     background-color: #dcd5cf;
 }
 
-a{
-    text-decoration: none; /* remove o sublinhado dos links */
+a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
 }
 
-header{
-    background:url(../images/fundo1.png);
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 1vw 1vw 1vw;
+    align-items: center;
+    background-color: #1b0a02;
+
+    & ul {
+        display: flex;
+
+    }
+
+    & li {
+        margin: 0px 10px 0px 10px;
+    }
+
+    & a {
+        color: #7f7e5c;
+        display: block;
+        border: 2px solid #b4b383;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+}
+
+header a.marcado {
+    border: 2px solid #b4b383;
+    background-color: #683d049c;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: block;
+    padding: 10px 20px;
+}
+
+
+section.banner {
+    background: url(../images/fundo1.png);
     background-size: cover;
     margin: 0px 0px 0px 0px;
 
-  padding: 45px 45px 45px;
+    padding: 45px 45px 45px;
 }
 
-header nav{
-    display: flex; 
-    justify-content: space-between;
-    padding: 5vw 10vw 5vw 10vw;
-     align-items: center;
-     
-
-& ul {
-    display: flex;
-   
-}
-& li {
-    margin: 0px 10px 0px 10px;
-}
-
-& a{
-     color: rgb(255, 217, 167);
-}
-
-}
-
-header span h1{
-color: #fbf7ba;
-   margin: 20px 80px;
+section.banner span h1 {
+    color: #fbf7ba;
+    margin: 20px 80px;
     font-size: 5vw;
 
 }
 
-header img{
+section.banner img {
     max-width: 20%;
     border-radius: 30%;
 }
 
-header p button{
-   background-color: #1b0a02;
-color: #7f7e5c;
-padding:30px 50px 30px 50px;
-margin: 4vw 4vw;
- 
+section.banner p a button {
+    background-color: #1b0a02;
+    color: #7f7e5c;
+    padding: 30px 50px 30px 50px;
+    margin: 4vw 4vw;
+
 }
 
-section.introducao{
-  margin: 50px 100px ;
+section.introducao {
+    margin: 50px 100px;
 }
 
 
 
-section.introducao h2{
+section.introducao h2 {
     font-size: 3vw;
     margin: 100px 100px;
 }
 
-section.introducao div{
- display: flex;
-    justify-content: space-between; 
+section.introducao div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 50px 100px; 
-    gap: 20px; 
-    
+    margin: 50px 100px;
+    gap: 20px;
+
 
 }
 
-section.introducao span p{
+section.introducao span p {
     font-size: 2rem;
-   font-weight: bolder;
-   color: #7f7e5c;
+    font-weight: bolder;
+    color: #7f7e5c;
 }
 
-section.introducao p{
+section.introducao p {
     padding: 10px 5px;
     font-size: 1.3rem;
 
 
 }
+
+section.introducao img{
+    border-radius: 10vw;
+}
+
 .motivacao {
-    min-height: 80vh; 
-    background-color: #8B4513; 
-    background-image: url(../images/background2.png); 
+    min-height: 80vh;
+    background-color: #8B4513;
+    background-image: url(../images/background2.png);
     background-size: cover;
     background-position: center;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    position: relative; 
-    overflow: hidden; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .motivacao-conteudo {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     max-width: 90vw;
 }
 
 .texto-grande {
-    font-family: 'SuaFonteAqui', sans-serif; 
-    font-size: 8vw; 
-    color: #fbf7ba; 
-    line-height: 0.9; 
-    text-align: right; 
-    white-space: pre-line; 
+    font-family: 'SuaFonteAqui', sans-serif;
+    font-size: 8vw;
+    color: #fbf7ba;
+    line-height: 0.9;
+    text-align: right;
+    white-space: pre-line;
     margin: 0;
 }
 
 .imagem-e-disciplina {
-    position: relative; 
-    display: flex; 
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; 
-    padding: 10px; 
+    background-color: black;
+    padding: 10px;
 }
 
 .imagem-e-disciplina img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
-    display: block; 
+    display: block;
 }
 
 .disciplina-cursiva {
-    
-    font-size: 10vw; 
-    color: #fbf7ba; 
-    position: absolute; 
-    bottom: 5%; 
-    right: -10%; 
-  
-    margin: 0; 
-}
-section.disc{
- margin: 50px 100px ;
-    
-}
-section.disc h2{
-font-size: 3vw;
 
-padding-bottom: 10rem;
+    font-size: 10vw;
+    color: #fbf7ba;
+    position: absolute;
+    bottom: 5%;
+    right: -10%;
+
+    margin: 0;
 }
 
-section.disc img{
-
- max-width: 50%;
- padding: 30px 30px;
+section.disc {
+    margin: 50px 100px;
 
 }
-section.disc div{
+
+section.disc h2 {
+    font-size: 3vw;
+
+    padding-bottom: 10rem;
+}
+
+section.disc img {
+
+    max-width: 50%;
+    padding: 30px 30px;
+
+}
+
+section.disc div {
     display: flex;
     justify-content: space-between;
 }
-section.disc p{
+
+section.disc p {
     font-size: 2rem;
 }
-section.disc span{
+
+section.disc span {
     color: #7f7e5c;
 }
 
-section.explorando{
-background: url(../images/background3.png);
- background-size: cover;
- padding: 15vw;
+section.explorando {
+    background: url(../images/background3.png);
+    background-size: cover;
+    padding: 15vw;
 }
 
-section.explorando h2{
-font-size: 5rem;
-padding-bottom: 18px;
+section.explorando h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
 }
 
-section.explorando p{
+section.explorando p {
     padding: 10px;
     font-size: 2rem;
 }
- 
 
-footer{
-    background-color: #3a1b01;
-}
-footer a{
-    margin: 50px;
-   
+section.corpo {
+    background: url(../images/fundoIntrCorpo.png);
+    background-size: cover;
+    padding: 10vw;
 }
 
-footer p{
-    padding: 10px 50px 10px 50px;
+section.corpo h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+section.corpo h2 {
+    padding: 10px;
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+section.corpo h2 span {
+    font-weight: bolder;
+}
+
+section.corpo p {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section.tecnicasFoco {
+    background-color: #4b5b21;
+    padding: 10vw;
+
+}
+
+section.tecnicasFoco h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.tecnicasFoco p {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section.tecnicasFoco img {
+    max-width: 20%;
+    margin: 2vw 3vw;
+    padding: 1vw 1vw;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+
+}
+
+section.distracoes {
+    background: #e6e6e6;
+    padding: 10vw;
+}
+
+section.distracoes h2 {
+    font-size: 4rem;
+    padding-bottom: 2vw;
+}
+
+section.distracoes p.sub {
+    font-size: 1.5rem;
+    background-color: #b1c188;
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 3vw 2vw;
+}
+
+section.distracoes ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section.distracoes ul li {
+    text-align: center;
+    margin-top: 2vw;
+    padding: 4vw;
+    background: url(../images/backgroundLista.png);
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid #702c04;
+    gap: 10px;
+
+}
+
+section.motivacaoCorpo {
+    background: url(../images/fundoMotivacao.png);
+    background-size: cover;
+    padding: 10vw;
+    text-align: center;
+}
+
+section.motivacaoCorpo h2 {
+    font-size: 7rem;
+    padding-bottom: 2vw;
+    color: #ffffff;
+}
+
+section.motivacaoCorpo p span {
+    padding: 10px;
+    font-size: 2rem;
+    color: #e0fe9c;
+}
+
+section.motivacaoCorpo p {
+    padding: 2vw 2vw;
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+
+section.celebrando {
+    background: url(../images/fundoCelebrando.png);
+    background-size: cover;
+    padding: 8vw;
+    text-align: center;
+}
+
+section.celebrando h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    color: #5d4131;
+    font-weight: bolder;
+}
+
+section.celebrando p.passo {
+    padding: 10px;
+    display: block;
+    border-radius: 50px;
+    font-size: 2rem;
+    color: #2c1d00;
+    background-color: rgb(230, 229, 229);
+}
+
+section.celebrando img {
+    margin-top: 3vw;
+    max-width: 18%;
+    border-radius: 20px;
+}
+
+section.celebrando p.supercombo {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #593a33;
+}
+
+section.conceito {
+    background: url(../images/background6.png);
+    background-size: cover;
+    padding: 10vw;
+}
+
+section.conceito h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    font-weight: bolder;
+    color: #743a0b;
+}
+
+section.conceito p {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section.distincao img {
+    max-width: 20%;
+    padding: 10px 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.distincao p.marcacao {
+    background-color: #a5b57c;
+    display: inline;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    color: #1b0a02;
+}
+
+section.distincao p.marcacaoDois {
+    background-color: #84693c;
+    display: inline;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section.distincao {
+    background-color: #7f7e5c;
+    background-size: cover;
+    padding: 8vw;
+}
+
+section.distincao h2 {
+    font-size: 5rem;
+    padding-bottom: 5vw;
+    color: #1b0a02;
+}
+
+section.distincao p {
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+
+section.influencias {
+
+    background-color: #a5b57c;
+    background-size: cover;
+    padding: 8vw;
+}
+
+section.influencias p {
+    margin: 10px 20px;
+}
+
+section.influencias p.horas {
+    color: white;
+    background-color: #7f7e5c;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+section.influencias p.cedo {
     color: white;
 }
 
-footer span{
-font-weight: bolder;
-    
+section.influencias p.marcacao {
+    background-color: #84693c;
+    color: white;
+    border-radius: 20px;
+    display: inline;
+}
+
+section.influencias h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.influencias span {
+    color: #84693c
+}
+
+
+section.influencias p {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #1b0a02;
+}
+
+section.midia h3 {
+    font-weight: bolder;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+}
+
+section.midia {
+    background: url(../images/cadeiras.png);
+    background-size: cover;
+    padding: 10vw;
+
+}
+
+section.espaco {
+    background: #c3a778;
+    padding: 10vw 10vw;
+}
+
+section.espaco ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section.espaco ul li.itens {
+    text-align: center;
+    background: #fffbf5;
+    border: 3px solid #000000;
+    gap: 20px;
+
+}
+
+section.espaco ul li h3 {
+    font-size: 2rem;
+    padding: 10px;
+    color: #000000;
+}
+
+section.espaco ul li p.sub {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    color: #6f7a52;
+}
+
+section.espaco ul li p {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bolder
+}
+
+section.espaco ul li p.uso {
+    background-color: #fffbf5;
+    border: 2px solid #000000;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+section.espaco img {
+    max-width: 100%;
+    padding: 2px 10px;
+    display: block;
+    margin-left: auto;
+
+    border: 1px solid #745a13;
+    border-radius: 20px;
+    background-color: #e9d7b6;
+}
+
+section.espaco p.funcao {
+    display: inline;
+    padding: 10px 20px;
+    background-color: #e9d7b6;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 2px solid #745a13;
+    border-radius: 20px;
+
+}
+
+section.midia a button.conselhos {
+    background-color: #fffefd;
+    color: #7f7e5c;
+    font-weight: bolder;
+    padding: 20px 50px 20px 50px;
+    margin: 2vw 2vw;
+
+}
+
+section.midia a button {
+    background-color: #e9d7b6;
+    color: #7f7e5c;
+    font-weight: bolder;
+    padding: 20px 60px 20px 60px;
+    margin: 1vw 1vw;
+
+
+}
+
+section.midia h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    color: #f4efe5;
+    font-weight: bolder;
+}
+
+section.midia p {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+
+section.reflexoes {
+    background: url(../images/background7.png);
+    background-size: cover;
+    padding: 15vw;
+}
+
+section.reflexoes h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    color: #f4efe5;
+    font-weight: bolder;
+    text-align: center;
+}
+
+section.reflexoes p {
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+section.estudo {
+    background-color: #7f7e5c;
+    background-size: cover;
+    padding: 5vw 5vw;
+    text-align: left
+}
+
+section.estudo h2 {
+    font-size: 3rem;
+    padding-bottom: 5px;
+    margin: 1vw 1vw;
+    color: #3a1b01;
+}
+
+section.estudo ul {
+    display: flex;
+
+    gap: 5vw;
+}
+
+section.estudo ul li {
+    text-align: center;
+    background: #e9d7b6;
+    border: 3px solid #ffffff;
+    gap: 10px;
+
+}
+
+section.estudo p.subDois {
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    padding: 10px 20px;
+
+    margin: 2vw 1vw;
+    border-radius: 20px;
+}
+
+section.estudo ul li p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+
+section.estudo p.sub {
+    color: #fbf7ba;
+    font-size: 1.3rem;
+
+    margin: 3vw 2vw;
+}
+
+
+section.aprendizado {
+    background: url(../images/pixelado.png);
+    background-size: cover;
+    padding: 8vw 8vw;
+
+    text-align: center;
+}
+
+section.aprendizado h3 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #000000;
+    margin-bottom: 2vw;
+}
+
+section.aprendizado h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #faf399;
+    font-weight: bolder;
+}
+
+section.aprendizado p.frase {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fbf7ba;
+    background-color: rgb(97, 61, 8);
+    display: inline;
+    border-radius: 5px;
+}
+
+section.aprendizado p {
+    padding: 30px;
+    font-size: 1.5rem;
+
+    color: #f7f3aa;
+}
+
+section.estudoEficiente {
+    background: url(../images/background7.png);
+    padding: 8vw 8vw;
+    background-size: cover;
+    text-align: center;
+}
+
+section.estudoEficiente div {
+    display: flex;
+}
+
+section.estudoEficiente h1 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #f4efe5;
+    font-weight: bolder;
+}
+
+section.estudoEficiente p {
+    padding: 10px;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+section.estudoEficiente p.destaque {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #3a1b01;
+    padding: 20px 20px;
+    color: #ffffff;
+    display: inline;
+    border-radius: 5px;
+    margin-top: 5vw;
+}
+
+section.estudoEficiente p.destaque span {
+    color: #e6ffa6;
+}
+
+section.montarRotina {
+    background: url(../images/fundoBalanca.png);
+    background-size: cover;
+    padding: 8vw 8vw;
+    text-align: center;
+}
+
+section.montarRotina h2 {
+    font-size: 3rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #333;
+    font-weight: bolder;
+}
+
+section.montarRotina p.sub {
+    font-size: 1.5rem;
+    margin: 3vw 2vw;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    display: inline;
+    background-color: #e0fe9c;
+}
+
+section.montarRotina p.definaHorarios {
+    text-shadow: 1px 1px 1px #333;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+section.montarRotina p.sombra {
+    text-shadow: 1px 1px 1px #a5b57c;
+    font-size: 2rem;
+}
+
+section.montarRotina p {
+    margin: 10px 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+section.metodos {
+    background: url(../images/fundoFlor.png);
+    padding: 8vw 8vw;
+    background-size: cover;
+}
+
+section.metodos p {
+    display: flex;
+}
+
+section.metodos h2 {
+    font-size: 3rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.metodos p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #e0fe9c;
+    margin-bottom: 2vw;
+}
+
+section.metodos p img {
+    border-radius: 10px;
+    margin-top: 2vw
+}
+
+section.discDif {
+    background: url(../images/fundoFlorDoc.png);
+    padding: 8vw 8vw;
+    background-size: cover;
+    text-align: center;
+}
+
+section.discDif h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+section.discDif p.sub {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: #9bbe94;
+    text-shadow: 1px 1px 1px #035009;
+    margin: 2vw 2vw;
+}
+
+section.discDif p {
+    padding: 10px;
+    font-size: 2rem;
+
+    color: #ffffff;
+}
+
+section.revisao {
+    background-color: #1b0a02;
+    padding: 4vw 4vw;
+}
+
+section.revisao div {
+    display: flex;
+    justify-content: right;
+}
+
+section.revisao h2 {
+    font-size: 6rem;
+    padding-bottom: 18px;
+    margin: 1vw 1vw;
+    color: #fbf7ba;
+
+    text-align: center;
+}
+
+section.revisao p {
+    padding: 10px;
+    font-size: 2.7rem;
+    text-shadow: 1px 1px 1px #404d22;
+    color: #a5b57c;
+
+}
+
+section.feRelaTrab {
+    background: url(../images/fundoFeTrab.png);
+    background-size: cover;
+    padding: 10vw 10vw;
+    text-align: center;
+}
+
+section.feRelaTrab p {
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #69443c;
+}
+
+section.feRelaTrab h1 {
+    font-size: 4rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #69443c;
+    font-weight: bolder;
+}
+
+section.feRelaTrab p.sub {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #a18a75;
+    padding: 20px 20px;
+    color: #ffffff;
+    display: inline;
+    border: 1px solid rgb(134, 85, 62);
+    border-radius: 5px;
+    margin-top: 5vw;
+}
+
+section.vidaAdolescente {
+    background: url(../images/FundoPomba.png);
+    padding: 10vw 10vw;
+    background-size: cover;
+    text-align: center;
+}
+
+
+section.vidaAdolescente p {
+    font-size: 3rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #f6f2e1;
+    text-shadow: 1px 1px 1px #3a1b01;
+}
+
+section.areaVida {
+    background-color: #4b5b21;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+section.areaVida h2 {
+    font-size: 7rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #3a1b01;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+section.areaVida ol {
+    padding: 10px;
+    font-size: 2.5rem;
+    margin: 2vw 2vw;
+    color: #ffffff;
+}
+
+section.areaVida ol li p {
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+section.areaVida img {
+    border-radius: 90px;
+    border: 3px solid #3a1b01;
+
+}
+
+section.objetivos {
+    background: url(../images/fundoAAB.png);
+    padding: 15vw 10vw;
+    background-size: cover;
+}
+
+section.objetivos h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #3a1b01;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+section.objetivos ul li {
+    display: flex;
+    margin: 3vw 3vw;
+    justify-content: space-between;
+}
+
+section.objetivos ul li p {
+
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #000000;
+    font-weight: bolder;
+}
+
+section.beneficios {
+    background-color: #8f703d;
+    padding: 5vw 5vw;
+    background-size: cover;
+    text-align: center;
+}
+
+section.beneficios h2 {
+    font-size: 5rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #e4e0e0;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #3a1b01;
+}
+
+section.beneficios ul li {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    margin: 20px 20px;
+    background-color: #a78d65;
+}
+
+section.beneficios ul li p {
+
+    margin: 2vw 2vw;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #462912;
+    font-weight: bolder;
+}
+
+section.beneficios p.cuidados {
+    font-size: 2rem;
+    color: rgb(224, 222, 222);
+    text-shadow: 1px 1px 1px #3a1b01;
+    margin-bottom: 3vw;
+}
+
+section.beneficios p.passo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #3a1b01;
+    padding: 20px 20px;
+    color: #ffffff;
+    display: inline;
+    border-radius: 50px;
+    margin-top: 5vw;
+}
+
+
+section.conheca {
+    background-color: #f7f3aa;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+section.conheca h1 {
+    font-size: 7rem;
+    padding-bottom: 18px;
+    margin: 2vw 2vw;
+    color: #4b5b21;
+    font-weight: bolder;
+}
+
+section.conheca p {
+    padding: 10px;
+    font-size: 2.5rem;
+
+    color: #000000;
+}
+
+section.quemSomos {
+    background-color: #f7f39e;
+    padding: 8vw 8vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+}
+
+section.quemSomos p {
+    padding: 10px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+section.alunos {
+    background-color: #e1d584;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+section.alunos ul li {
+    margin: 3vw 3vw;
+}
+
+section.alunos ul li h3 {
+    font-size: 3rem;
+    padding: 10px;
+    color: #69443c;
+}
+
+
+section.alunos ul li p {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #708831;
+}
+
+
+section.alunos ul li img {
+    max-width: 20%;
+    border: 2.2px solid #a03d27;
+    border-radius: 15%;
+
+}
+
+section.alunosDois {
+    background-color: #d3c77a;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+
+section.alunosDois ul li h3 {
+    font-size: 3rem;
+    padding: 10px;
+    color: #69443c;
+}
+
+
+section.alunosDois ul li p {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #708831;
+}
+
+section.alunosDois ul li img {
+    max-width: 20%;
+    border: 2.2px solid #a03d27;
+    border-radius: 15%;
+}
+
+section.alunosDois p.dec {
+    text-align: center;
+}
+
+footer {
+    background-color: #3a1b01;
+    padding: 2vw 2vw;
+}
+
+footer a {
+    margin: 50px;
+
+}
+
+footer p {
+    padding: 10px 50px 10px 50px;
+    color: white;
+    margin: 0.4vw;
+    text-align: center;
+}
+
+footer span {
+    font-weight: bolder;
+
 }
