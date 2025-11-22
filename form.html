@@ -1,0 +1,510 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <title>Quiz de Rotina</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  
+
+  <style>
+
+    body {
+
+      font-family: system-ui, Arial;
+
+      background: #f5f5f5;
+
+      padding: 20px;
+
+      color: #111;
+
+    }
+
+
+    .caixa {
+
+      max-width: 850px;
+
+      margin: auto;
+
+      background: #fff;
+
+      padding: 25px;
+
+      border-radius: 10px;
+
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
+
+    }
+
+
+    h1 { margin-top: 0; }
+
+
+    .pergunta {
+
+      margin-bottom: 20px;
+
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid #eee;
+
+    }
+
+
+    .titulo-pergunta {
+
+      font-weight: 600;
+
+      margin-bottom: 6px;
+
+    }
+
+
+    .opcoes label {
+
+      display: block;
+
+      margin: 5px 0;
+
+    }
+
+
+    .botoes {
+
+      margin-top: 20px;
+
+      display: flex;
+
+      gap: 10px;
+
+    }
+
+
+    button {
+
+      padding: 10px 15px;
+
+      border-radius: 6px;
+
+      border: 1px solid #111;
+
+      cursor: pointer;
+
+    }
+
+
+    .botao-principal {
+
+      background: #111;
+
+      color: #fff;
+
+    }
+
+
+    .resultado {
+
+      margin-top: 20px;
+
+      padding: 15px;
+
+      background: #fafafa;
+
+      border: 1px solid #ddd;
+
+      border-radius: 6px;
+
+    }
+
+
+    .escondido { display: none; }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class="caixa">
+
+
+    <h1>Quiz sobre rotina, equilíbrio e hábitos</h1>
+
+    <p>Responda todas as 10 perguntas para receber uma análise personalizada.</p>
+
+
+    <form id="formularioQuiz">
+
+
+      <!-- MODELO DE PERGUNTA -->
+
+      <!-- Todas seguem a mesma estrutura -->
+
+      <!--AUMENTAR PARA CINCO RESPOSTAS-->
+
+      
+
+      <div class="pergunta" id="p1">
+
+        <div class="titulo-pergunta">1. Como você avalia sua rotina no geral?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p1" value="1"> Bem organizada e estável.</label>
+
+          <label><input type="radio" name="p1" value="2"> Equilibrada, mas com alguns desafios.</label>
+
+          <label><input type="radio" name="p1" value="3"> Bastante instável em várias áreas.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p2">
+
+        <div class="titulo-pergunta">2. Quando algo foge do planejado, como você reage?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p2" value="1"> Me adapto bem e retomo rápido.</label>
+
+          <label><input type="radio" name="p2" value="2"> Me ajusto, mas às vezes perco o foco.</label>
+
+          <label><input type="radio" name="p2" value="3"> Tenho dificuldade para voltar ao ritmo.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p3">
+
+        <div class="titulo-pergunta">3. Qual área é mais desafiadora atualmente?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p3" value="1"> Estudos</label>
+
+          <label><input type="radio" name="p3" value="2"> Relacionamentos</label>
+
+          <label><input type="radio" name="p3" value="3"> Saúde</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p4">
+
+        <div class="titulo-pergunta">4. Como estão seus hábitos diários?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p4" value="1"> Tenho horários definidos.</label>
+
+          <label><input type="radio" name="p4" value="2"> Tenho alguns hábitos, mas falho às vezes.</label>
+
+          <label><input type="radio" name="p4" value="3"> Não consigo manter constância.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p5">
+
+        <div class="titulo-pergunta">5. Como você avalia sua produtividade?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p5" value="1"> Alta.</label>
+
+          <label><input type="radio" name="p5" value="2"> Moderada.</label>
+
+          <label><input type="radio" name="p5" value="3"> Baixa.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p6">
+
+        <div class="titulo-pergunta">6. Sobre sua motivação diária:</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p6" value="1"> Bem constante.</label>
+
+          <label><input type="radio" name="p6" value="2"> Oscila bastante.</label>
+
+          <label><input type="radio" name="p6" value="3"> Tenho dificuldade para me motivar.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p7">
+
+        <div class="titulo-pergunta">7. Você consegue equilibrar estudo, descanso e vida pessoal?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p7" value="1"> Sim.</label>
+
+          <label><input type="radio" name="p7" value="2"> Às vezes.</label>
+
+          <label><input type="radio" name="p7" value="3"> Não consigo no momento.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p8">
+
+        <div class="titulo-pergunta">8. Como você descreveria sua disciplina?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p8" value="1"> Boa.</label>
+
+          <label><input type="radio" name="p8" value="2"> Mediana.</label>
+
+          <label><input type="radio" name="p8" value="3"> Baixa.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p9">
+
+        <div class="titulo-pergunta">9. Como está sua energia ao longo do dia?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p9" value="1"> Estável.</label>
+
+          <label><input type="radio" name="p9" value="2"> Irregular.</label>
+
+          <label><input type="radio" name="p9" value="3"> Baixa.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="pergunta" id="p10">
+
+        <div class="titulo-pergunta">10. Você planeja sua semana?</div>
+
+        <div class="opcoes">
+
+          <label><input type="radio" name="p10" value="1"> Sim, com antecedência.</label>
+
+          <label><input type="radio" name="p10" value="2"> Às vezes.</label>
+
+          <label><input type="radio" name="p10" value="3"> Não planejo.</label>
+
+        </div>
+
+      </div>
+
+
+      <div class="botoes">
+
+        <button type="button" id="botaoResultado" class="botao-principal">Ver resultado</button>
+
+        <button type="button" id="botaoLimpar">Limpar</button>
+
+      </div>
+
+
+    </form>
+
+
+    <div id="caixaResultado" class="resultado escondido"></div>
+
+
+  </div>
+
+
+<script>
+
+// ===============================
+
+// FUNÇÕES DO QUIZ
+
+// ===============================
+
+
+// Função que retorna o valor marcado em cada pergunta
+
+function obterValorPergunta(nomePergunta) {
+
+  const selecionado = document.querySelector(`input[name="${nomePergunta}"]:checked`);
+
+  return selecionado ? selecionado.value : null;
+
+}
+
+
+// Pontuação: opção 1 = 3 pts, 2 = 2 pts, 3 = 1 pt
+
+function converterPontuacao(valor) {
+
+  if (valor === "1") return 3;
+
+  if (valor === "2") return 2;
+
+  if (valor === "3") return 1;
+
+  return 0;
+
+}
+
+
+// Soma a pontuação de todas as perguntas
+
+function calcularPontuacaoFinal() {
+
+  let soma = 0;
+
+
+  for (let i = 1; i <= 10; i++) {
+
+    const resposta = obterValorPergunta(`p${i}`);
+
+    if (!resposta) return null; // Falta responder algo
+
+    soma += converterPontuacao(resposta);
+
+  }
+
+
+  return soma;
+
+}
+
+
+// Retorna o texto do perfil conforme a pontuação
+
+//AUMENTAR PARA 5 PERFIS
+
+function gerarPerfil(pontos) {
+
+  if (pontos >= 26) {
+
+    return `
+
+      <strong>Perfil 1 — Rotina muito organizada</strong>
+
+      <p>Você demonstra constância, foco e responsabilidade. Sua rotina é sólida e bem estruturada.</p>
+
+      <p><b>Pontuação:</b> ${pontos}</p>
+
+    `;
+
+  }
+
+
+  if (pontos >= 20) {
+
+    return `
+
+      <strong>Perfil 2 — Rotina estável com pequenos ajustes</strong>
+
+      <p>Sua rotina funciona bem, mas algumas áreas ainda precisam de ajustes leves.</p>
+
+      <p><b>Pontuação:</b> ${pontos}</p>
+
+    `;
+
+  }
+
+
+  if (pontos >= 14) {
+
+    return `
+
+      <strong>Perfil 3 — Rotina irregular</strong>
+
+      <p>Você tem momentos bons, mas falta constância. Pequenos hábitos já podem ajudar muito.</p>
+
+      <p><b>Pontuação:</b> ${pontos}</p>
+
+    `;
+
+  }
+
+
+  return `
+
+    <strong>Perfil 4 — Rotina instável</strong>
+
+    <p>Sua rotina está desorganizada no momento, mas com passos pequenos você pode retomar o controle.</p>
+
+    <p><b>Pontuação:</b> ${pontos}</p>
+
+  `;
+
+}
+
+
+// ===============================
+
+// EVENTOS DOS BOTÕES
+
+// ===============================
+
+
+document.getElementById("botaoResultado").addEventListener("click", function () {
+
+  const pontos = calcularPontuacaoFinal();
+
+  const caixaResultado = document.getElementById("caixaResultado");
+
+
+  if (pontos === null) {
+
+    caixaResultado.classList.remove("escondido");
+
+    caixaResultado.innerHTML = "<strong>Responda todas as perguntas para ver o resultado.</strong>";
+
+    return;
+
+  }
+
+
+  caixaResultado.classList.remove("escondido");
+
+  caixaResultado.innerHTML = gerarPerfil(pontos);
+
+});
+
+
+document.getElementById("botaoLimpar").addEventListener("click", function () {
+
+  document.getElementById("formularioQuiz").reset();
+
+  document.getElementById("caixaResultado").classList.add("escondido");
+
+});
+
+</script>
+
+
+</body>
+
+</html>
